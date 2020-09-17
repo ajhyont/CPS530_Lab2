@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" contenteditable="true">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Volcanoes</title>
+	<style>
+		html{ scroll-behavior: smooth; }		/*Smooths over nav buttons' scrolls */
+		.fixed{ position: fixed; top: 0; }  /*making navBar sticky*/
+		body{ background-color: black; color: white; font-size: 1.8vh; }
+		h1#nameAndid{ font-size: 15px; display: inline-block;}
+		audio { display: inline-block; position: absolute; right: 0;}		
+		header { display: flex; margin: auto; border-style: solid; z-index: 1; background-image: url("volcano_intro_img.jpg"); background-size: 190vh 100vh; background-repeat: no-repeat; width: 100%; height: 100vh; font-size: 25px; border-style: none;  border-radius: 30px; opacity:0.7;} /* Includes border-radius & opacity CSS3 properties*/
+		header a{ text-decoration: none; color: orange; margin: auto; padding: 0;}
+		header h1{ text-align: center; font-size: 4vh;}		
+		#navBar { z-index: 1; background-color: maroon; color: white; width: 100%; display: block; padding: 4vh;}
+		nav#navBar a.nav_link{ text-decoration: none; color: white; font-weight: bolder; font-size: 3vh; margin: 0vh 2vh; text-align: center;  }
+		nav#navBar a.nav_link:hover{ color: #875639; background-color: orange; }
+		/*main content CSS, includes articles */		
+		article#f1{ padding-top: 18vh; }
+		article#f2{ padding-top: 18vh; }
+		article#f3{ padding-top: 18vh; }
+		article#f4{ padding-top: 18vh; }
+		article h2{ text-align: center; font-size: 30px; font-weight: bolder; }
+		article#f1 iframe{ width: 1200px; height: 1000px; display:flex; margin: auto;}
+		article#f4 iframe{ width: 1200px; height: 1000px; display:flex; margin: auto;}
+		table{ border: 1px solid red; }
+		table th { font-size: 8vh; }
+		table td { border: 1px solid red; font-size: 16px; }			
+	  article p.bq{ font-size: 36px; }	
+	  /*Footer */
+	  footer.about { color: white; font-size: 5vh; margin-bottom: 60vh;}
+	</style>
+  <script>
+		/*** PAssword Protecting Webpage ****/		
+			var password=12345, validator=0;
+			while(validator != password){
+				validator=prompt("Please enter password");
+			}
+			alert("Thx. click ok to continue...");
+	</script> 
+</head>
+<body onload="enableAudio()">
+<!-- My name and student id -->
+	<h1 id="nameAndid">Name: Avijit Singh Jhyont <br/> Student id: 500570906 <br/> This is the main page</h1>
+<!-- Adding audio to site -->
+	<audio controls loop contenteditable="false">
+		<source id="audio" src="volcano.mp3" type="audio/mpeg">		
+		Your browser does not support audio element
+	</audio>
+<!-- intro screen: volcanoes aroud the world -->	
+	<header>
+		<a href="#intro" contenteditable="false">
+			<h1>Volcanoes</h1>
+			<h1>around the world</h1>
+			<h1 style="font-weight: bolder; color: red; ">This entire content is editable. you can change edit the content however u like.</h1>
+		</a>
+	</header>
+<!-- The navbar -->	
+	<h1 id="intro">Here is all you need to know about volcanoes:</h1>
+	<nav id="navBar" contenteditable="false">
+		<a class="nav_link" href="#f1">How&nbsp;Volcanoes&nbsp;Work</a>
+		<a class="nav_link" href="#f2">Famous&nbsp;Active&nbsp;Volcanoes</a>
+		<a class="nav_link" href="#f3">Environmental&nbsp;Impact</a>
+		<a class="nav_link" href="#f4">Summary:&nbsp;Wiki&nbsp;on&nbsp;Volcanoes</a>
+		<a class="nav_link" href="#about">About&nbsp;this&nbsp;Site</a>
+	</nav>
+	<main>
 
+<!-- How Volcanoes Work -->		
+		<article id="f1">
+			<h2>How&nbsp;Volcanoes&nbsp;Work</h2>
+			<iframe src="https://youtu.be/SoJ8cRnbbps">
+			</iframe>
+		</article>
+
+<!-- Famous Active Volcanoes: colspan and rowspan applied here -->			
+		<article id="f2"><h2 style="color: black;">... </h2>		
+			<table>
+				<tr>
+					<th colspan="2">Famous&nbsp;Active&nbsp;Volcanoes</th>					
+				</tr>	
+				<tr>
+					<td>Name</td>
+					<td>Description</td>
+				</tr>	
+				<tr>									
+					<td>Galeras - Colombia<br /><figure><img width="200" src="https://inteng-storage.s3.amazonaws.com/img/iea/yrwQdAzJ6N/sizes/707px-volcan-galeras-cropped_resize_md.jpg" alt="image of a volcano"></figure></td>
+					<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </td>				
+				</tr>
+				<tr>
+					<td>Mount Nyiragongo - Congo<br /><figure><img width="200" src="https://inteng-storage.s3.amazonaws.com/img/iea/yrwQdAzJ6N/sizes/lava-lake-nyiragongo-2_resize_md.jpg" alt="image of a volcano"></figure></td>
+					<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </td>
+				</tr>
+				<tr>
+					<td>Eyjafjallajokull - Iceland<br /><figure><img width="200" src="https://inteng-storage.s3.amazonaws.com/img/iea/yrwQdAzJ6N/sizes/4530958802-de95e013e8-b_resize_md.jpg" alt="image of a volcano"></figure></td>
+					<td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </td>
+				</tr>
+				<tr>
+					<td>Difference between Active Volcanoes<figure><img width="200" src="https://media.gettyimages.com/photos/fuego-volcano-eruption-picture-id858018608?s=612x612" alt="image of a volcano"></figure></td>
+					<td rowspan="2">Active Volcanoes can explode anytime, But Inactive volcanoes have been dormant for ages.</td>
+				</tr>
+				<tr>
+					<td>And inActive Volcanoes<figure><img width="200" src="https://c8.alamy.com/comp/MT6PBG/view-of-a-smaller-inactive-volcano-from-the-side-of-san-christobal-nicaragua-MT6PBG.jpg" alt="image of a volcano"></figure></td>					
+				</tr>
+			</table>
+		</article>
+
+<!-- Environmental Impact -->
+		<article id="f3">
+			<h2>Environmental&nbsp;Impact</h2>
+			<p class="bq">
+					Volcanic ashes in the atmosphere causes more polution than what we can imagine. Thousands of metric tons of ashes and pollutants from earth mantle is dispurses over the atmosphere during an eruption. The earthquakes that preceed and run in parallel, inconjunction to the widespread sulfuric acid and flying magma over 1000deg celcius is responsible for coutless wildfires. Though, in places like iceland, volcanic presence can be a boon because while these exploding mountains can be devestating, areas around them make for invaluable hot springs with a lot natural healing properties due to the minerals in the present in the water.	
+			</p>			
+		</article>
+
+<!-- Wiki: summary of Volcanoes -->		
+		<article id="f4">
+			<h2>Summary:&nbsp;Wiki&nbsp;on&nbsp;Volcanoes</h2>
+			<iframe src="https://en.wikipedia.org/wiki/Volcano"></iframe>
+		</article>		
+	</main>
+<!-- Making NavBar Sticky -->
+	<script>	
+    var navBar= document.getElementById("navBar");
+    var fixed= navBar.offsetTop;
+    window.onscroll = function() {
+      if(window.pageYOffset > fixed){
+          navBar.classList.add("fixed");
+     		 } else {
+          navBar.classList.remove("fixed");
+      	 }
+  	};
+	</script>	
+
+<!-- Footer: links to Validation and Technical reports -->
+	<footer id="about" class="about" contenteditable="false">
+		<h3>About the website:</h3>
+		<ul>
+			<li>This website is html5 complient. In order to get the validation report, <a href="html5ValidationReport.html" target="_blank">click here</a></li>
+			<li>This website is CSS3 complient. In order to get the validation report, <a href="CSS3ValidationReport.html" target="_blank">click here</a></li>
+			<li>To get the full technical report of this site, <a href="TechnicalReport.html" target="_blank">click here</a></li>
+		</ul>		
+	</footer>
+</body>
+</html>
